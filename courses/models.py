@@ -17,7 +17,7 @@ class Course(models.Model):
                               related_name='courses_created',
                               on_delete=models.CASCADE)
     #Assunto que o esse curso pertence.
-    subject = models.ForeignKey(Suject,
+    subject = models.ForeignKey(Subject,
                                 related_name='courses',
                                 on_delete=models.CASCADE)
     #titulo do curso
